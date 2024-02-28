@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+           <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+         <bean class="com.AutoWired.Details" name="detail">
+             <property name="Name" value="Rahul Rana"/>
+             <property name="Address" value="Adarsh Muhalla"/>
+             <property name="Roll" value="1001"/>
+             <property name="Session" value="2021-2024"></property>
+         </bean>
+              
+          <!--              <bean class="com.AutoWired.Details" name="detail2">
+             <property name="Name" value="Rahul Rana"/>
+             <property name="Address" value="Adarsh Muhalla"/>
+             <property name="Roll" value="1001"/>
+             <property name="Session" value="2021-2024"></property>
+         </bean> -->
+         
+          <!--  AutoWiring using Annotion  -->           
+         <bean class="com.AutoWired.Student" name="std"/>
+         
+         <!-- AutoWiring using XML -->
+         <!-- <bean class="com.AutoWired.Student" name="std" autowire="byName"/> -->
+</beans>
+
