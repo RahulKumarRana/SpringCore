@@ -1,0 +1,16 @@
+package com.StereotypeServers;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+                ClassPathXmlApplicationContext con= new ClassPathXmlApplicationContext("ConfigFile.xml");
+//                System.out.println(con.getBeanDefinitionNames());
+                Student std=(Student) con.getBean("student");
+                System.out.println(std);
+                
+	}
+
+}

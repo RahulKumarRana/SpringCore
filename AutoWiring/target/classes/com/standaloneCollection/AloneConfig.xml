@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+         <beans 
+         xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+<!--         making list of best-friends...using util package..-->
+              <util:list list-class="java.util.LinkedList" id="bestFriends">
+                  <value>Sachin</value>
+                  <value>nitish</value>
+                  <value>saurav</value>
+                  <value>kapil</value>
+              </util:list>              
+               <bean class="com.standaloneCollection.Employee" name="standAlone">
+               <property name="Name" value="rahul rana"></property>
+               <property name="Friends" ref="bestFriends"/>
+               </bean>               
+         </beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+            <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+         <bean class="com.refrence.B" name="Bref">
+                   <property name="x" value="102"/>
+            </bean>
+            <bean class="com.refrence.A" name="Aref">
+                   <property name="name" value="rahul"/>
+                   <property name="ob" ref="Bref"/>
+            </bean>
+
+</beans>
